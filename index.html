@@ -1,36 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Audrey Claris</title>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-
-
-    <div class="row">
-        <div class="col s12">
-            <ul class="tabs custom-tabs">
-                <li class="tab col s3"><a href="#test1">Test 1</a></li>
-                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-                <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
-                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+    <div class="container">
+        <div class="menu-custom" id="">
+            <div class="portrait"></div>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#cv">cv</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#thanks">thanks</a></li>
             </ul>
         </div>
-        <div id="test1" class="col teal s12">Test 1</div>
-        <div id="test2" class="col red s12">Test 2</div>
-        <div id="test3" class="col  brown darken-1 s12">Test 3</div>
-        <div id="test4" class="col  amber lighten-2 s12">Test 4</div>
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <div class="intro">
+                    <h1>Home</h1>
+                    <p>description</p>
+                    <div class="test"></div>
+                </div>
+            </div>
+            <div class="section " id="section1">
+                <div class="intro">
+                    <h1>cv</h1>
+                    <p>cv ici</p>
+                    <div class="test"></div>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div class="slide" id="slide1" data-anchor="slide1">
+                    <div class="intro">
+                        <h1>Projets ici</h1>
+                        <p>
+                            acceuil projets
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" id="slide2" data-anchor="slide2">
+                    <h1>Projet 2</h1>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <h1>Projet 3</h1>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <h1>Projet 4</h1>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <h1>Projet 5</h1>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="intro">
+                    <h1>About me</h1>
+                </div>
+            </div>
+            <div class="section" id="section4">
+                <div class="intro">
+                    <h1>Thanks</h1>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['home', 'cv', 'projects', 'about', 'thanks'],
+            sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+            slidesNavigation: true,
+            scrollBar: true,
+        });
+    </script>
 </body>
 
 </html>

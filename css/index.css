@@ -1,9 +1,22 @@
-.custom-tabs {
+.menu-custom {
+background-color: red;
+height: 100vh;
+position: sticky; top: 0; left: 0; z-index: 500;}
+
+.portrait {
+    width: 20vw;
+    height: 20vw;
     background-color: black;
-    margin: 0;
-    padding: 0;
 }
 
-.row .col {
-    padding: 0;
-} 
+.container {
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: flex-end;
+}
+
+#fullpage {
+z-index: 200;
+
+}
