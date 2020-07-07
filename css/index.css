@@ -8,7 +8,7 @@ a {
 }
 
  a:hover {
-    color: #be9fd3!important;
+    color: #a288b4!important;
 }
 
 .menu-custom ul li {
@@ -67,12 +67,15 @@ color: white;
 background-color: #bfb8da;
 }
 
+#section3 .wave {
+    fill: #bfb8da;
+}
 
 #section4 {
     background-color: #bfb8da;
 }
 #section4 svg {
-    fill: white;top: 0;
+    fill: white; bottom: 0; position: absolute;
 }
 
 
@@ -99,6 +102,7 @@ z-index: 200;
 
 .slide {
     display: flex;
+    background-color:none;
 }
 
 .section .img-project, 
@@ -113,36 +117,58 @@ z-index: 200;
     height: 80%;
     position: relative;
     left: calc(50% - 25%);
-    top: calc(50% - 40%);
+    top: calc(50% - 43%);
     -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
 box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
 }
 
+.frame2 {
+    width: 80%!important;
+    height: 50%!important;
+    position: relative;
+    left: calc(50% - 30%)!important;
+    top: calc(50% - 25%)!important;
+}
+
 .img-project-details {
     width: 90%;
     height: 90%;
-    background-color: skyblue;
     position: relative;
     left: calc(50% - 45%);
     top: calc(50% - 45%);
 }
 
-#slide2 .img-project-details {
-   background-image: url('../src/blueprint.png');
+.img-project-details {
    background-size: cover;
    background-position: top center;
    transition: 2s ease-in-out all;
 
 }
 
-#slide2 .img-project-details:hover {
+#slide2 .img-project-details {
    background-image: url('../src/blueprint.png');
-   background-size: cover;
+}
+
+#slide3 .img-project-details {
+   background-image: url('../src/my_cinema.png');
+}
+
+#slide4 .img-project-details {
+   background-image: url('../src/irc.png');
+}
+
+#slide5 .img-project-details {
+   background-image: url('https://www.snapchat.com/global/social-lg.jpg');
+}
+
+
+
+
+.img-project-details:hover {
    background-position: bottom center;
    transition: 1.4s ease-in-out all;
 }
-
 
 .container-project { width: 100%; height: 100%;display: flex;}
 
@@ -156,7 +182,7 @@ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
     height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     left: calc(50% - 40%);
     top: calc(50% - 30%);
@@ -178,30 +204,27 @@ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
 .details .icons svg {height: 3vw;
 transition: ease-in-out 0.2s all;}
 
-.details .icons a {
-      /* pointer-events: none; */
-}
-svg:nth-child(1):hover {
+a:nth-child(1):hover {
 fill: #fb8b80;
 transition: ease-in-out 0.2s all;}
 
-svg:nth-child(2):hover{
+a:nth-child(2):hover{
 fill: #ff7b89;
 transition: ease-in-out 0.2s all;}
 
-svg:nth-child(3):hover {
+a:nth-child(3):hover {
 fill: #8a5082;
 transition: ease-in-out 0.2s all;}
 
-svg:nth-child(4):hover {
+a:nth-child(4):hover {
 fill: #705f93;
 transition: ease-in-out 0.2s all;}
 
-svg:nth-child(5):hover {
+a:nth-child(5):hover {
 fill: #758eb7;
 transition: ease-in-out 0.2s all;}
 
-svg:nth-child(6):hover {
+a:nth-child(6):hover {
 fill: #a5cad2;
 transition: ease-in-out 0.2s all;}
 
