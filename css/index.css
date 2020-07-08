@@ -75,10 +75,8 @@ background-color: #bfb8da;
     background-color: #bfb8da;
 }
 #section4 svg {
-    fill: white; bottom: 0; position: absolute;
+    fill: #524274; bottom: 0; position: absolute;
 }
-
-
 
 .container {
 display: flex;
@@ -89,7 +87,6 @@ flex-direction: column;
 
 #fullpage {
 z-index: 200;
-
 }
 
 .fp-controlArrow.fp-prev {
@@ -99,10 +96,13 @@ z-index: 200;
     border-color: transparent transparent transparent #000;
 }
 
-
 .slide {
     display: flex;
     background-color:none;
+}
+
+#slide2 p{
+margin: 5px;
 }
 
 .section .img-project, 
@@ -119,8 +119,8 @@ z-index: 200;
     left: calc(50% - 25%);
     top: calc(50% - 43%);
     -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
--moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
 }
 
 .frame2 {
@@ -162,9 +162,6 @@ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
    background-image: url('https://www.snapchat.com/global/social-lg.jpg');
 }
 
-
-
-
 .img-project-details:hover {
    background-position: bottom center;
    transition: 1.4s ease-in-out all;
@@ -172,20 +169,79 @@ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
 
 .container-project { width: 100%; height: 100%;display: flex;}
 
-.fp-slidesNav  {
-    margin: 0 auto!important;
-    text-align: center;
-}
+.fp-slidesNav  { margin: 0 auto!important; text-align: center; }
 
 .details {
     width: 50%;
     height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: relative;
     left: calc(50% - 40%);
     top: calc(50% - 30%);
+}
+
+.details2 {
+    width: 80%;
+    height: 97%;
+    left: calc(50% - 35%);
+    top: calc(50% - 47%);
+    color: white;
+    font-size: 1.3em;
+}
+
+.details3 {
+    top: calc(50% - 40%)!important;
+    width: 40%;
+    color: white;
+}
+.details3 a {
+    color: white!important;
+}
+.details3 a:hover {
+    color: #a288b4!important;
+}
+
+.md-48 {
+    font-size: 2vw!important;
+}
+
+.md-48 svg {
+    width: 40px;
+}
+
+.details3 p {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    margin: 8px;
+}
+.details3 span {
+    margin: 3px;
+}
+.details3 p a {
+     text-align: left;
+}
+.details h3,.details h5  {
+    margin: 0;
+    padding: 0;
+}
+
+.details h3 {
+    padding: 20px 0px;
+}
+.details2 span {
+    margin: 3px;
+}
+.details2 p {
+    padding: 5px;
+    margin: 0;
+}
+
+.bar { width: 0.2vw; 
+    height: 80vh;
+    background-color: #a49bca;
+    border-radius: 50px;
 }
 
 .details a {
@@ -201,34 +257,35 @@ box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.1);
     justify-content: space-evenly;
 }
 
-.details .icons svg {height: 3vw;
-transition: ease-in-out 0.2s all;}
+.column {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
 
-a:nth-child(1):hover {
-fill: #fb8b80;
-transition: ease-in-out 0.2s all;}
+.column div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+}
 
-a:nth-child(2):hover{
-fill: #ff7b89;
-transition: ease-in-out 0.2s all;}
+.progress {
+    height: 20px!important;
+    width: 62%!important;
+    position: relative;
+    margin: 15px!important;
+}
 
-a:nth-child(3):hover {
-fill: #8a5082;
-transition: ease-in-out 0.2s all;}
+.details .icons svg {height: 3vw; transition: ease-in-out 0.2s all;}
 
-a:nth-child(4):hover {
-fill: #705f93;
-transition: ease-in-out 0.2s all;}
-
-a:nth-child(5):hover {
-fill: #758eb7;
-transition: ease-in-out 0.2s all;}
-
-a:nth-child(6):hover {
-fill: #a5cad2;
-transition: ease-in-out 0.2s all;}
-
-
+a:nth-child(1):hover { fill: #fb8b80; transition: ease-in-out 0.2s all;}
+a:nth-child(2):hover{ fill: #ff7b89; transition: ease-in-out 0.2s all;}
+a:nth-child(3):hover { fill: #8a5082; transition: ease-in-out 0.2s all;}
+a:nth-child(4):hover { fill: #705f93; transition: ease-in-out 0.2s all;}
+a:nth-child(5):hover { fill: #758eb7; transition: ease-in-out 0.2s all;}
+a:nth-child(6):hover { fill: #a5cad2; transition: ease-in-out 0.2s all;}
 
 
 /* svg home  */
@@ -254,3 +311,140 @@ tspan { white-space:pre }
 .shp8 {fill: #1f86ac}
 .shp9 {fill: #24598b}
 .shp10 {fill: #1e71ac}
+
+#portrait {
+    position: absolute;
+    left: 10vw;
+    bottom: 15vw;
+    width: 30vw;
+}
+/* portrait */
+.portrait0 {fill: #d8cfdb}
+.portrait1 {fill: #40989e}
+.portrait2 {fill: #255b5f}
+.portrait3 {fill: #ebad95}
+.portrait4 {fill: #c6866d}
+.portrait5 {fill: #fec7a8}
+.portrait6 {opacity: 0.22;fill: #f57f73}
+.portrait7 { opacity: 0.659;fill: #f57f73}
+.portrait8 {fill: #cd6c62}
+.portrait9 {fill: #ffc7a6}
+.portrait10 {fill: #f4e6e6}
+.portrait11 {fill: #101010}
+.portrait12 {fill: #000000}
+.portrait13 {fill: #ffffff}
+.portrait14 {opacity: 0.231;fill: #000000}
+.portrait15 {fill: #70889b}
+.portrait16 {fill: #476074}
+.portrait17 {fill: #2e7688}
+.portrait18 {fill: #d3c41f}
+
+
+@media (max-width: 770px) {
+    #section2 .container-project {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    }
+
+    #section2 .info-project {
+    width: 100%;
+    top: 0!important;
+    }
+
+    .aboutme .details {
+    width: 80%;
+    height: 50%;
+    left: calc(50% - 40%);
+    bottom: 40%;
+    font-size: 2.4vw;
+    }
+
+    .aboutme h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4vw!important;
+    }
+
+    #section3 .container-project {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: tomato;
+    }
+
+    #section3 .img-project{
+    width: 100%!important;
+    position: relative;
+    right: unset;
+    margin: 0;
+    padding: 0;
+    }
+
+    #section3 .info-project{
+        background-color: yellowgreen;
+    }
+    #section3 a {
+         font-size: 3vw;
+    }
+
+    #section3 .icons svg {
+        width: 10vw!important;
+    }
+    #section3 .details {
+        background-color: wheat;
+        width: 80%;
+        top: 0;
+    }
+
+    #section3 .frame {
+        width: 80%;
+        left: calc(50% - 40%)
+    }
+
+    #section3 .info-project{
+    width: 100%;
+    bottom: 0!important;
+    }
+
+    #portrait {
+    width: 40%;
+    bottom: unset;
+    top: 6%;
+    left: calc(50% - 20%);
+    }
+
+    .column div p { margin-left: 1vw;}
+    .skills {margin-top: -50px!important;}
+
+    h3 {
+    padding: 0!important;
+    margin: 0!important;
+    font-size: vw!important;
+    }
+
+    h1 {
+    font-size: 10vw!important;
+    }
+
+    h5 {
+    padding: 0!important;
+    margin: 0!important;
+    font-weight: bold;
+    font-size: 2vw!important; 
+    }
+
+    .icons div{
+    padding: 0!important;
+    margin: 0!important;
+
+    }
+    .details p{
+    padding: 0px;
+    }
+
+    .bar {width: 80vw; 
+    height: 0.4vw; 
+    margin: 10px auto!important;}
+}
